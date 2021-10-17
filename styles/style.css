@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body h1 {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  width: 550px;
+  margin: 25px 0 15px 0;
+}
+
+body section {
+  border: 1px solid #949494;
+  border-radius: 5px;
+  width: 550px;
+  padding: 25px 20px;
+}
+
+body section .transaction-input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body section .transaction-input-container input {
+  height: 35px;
+  border: 1px solid #949494;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+body section .transaction-input-container button {
+  height: 35px;
+  font-size: 15px;
+  background-color: #353942;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin-left: 5px;
+}
+
+body section .transaction-input-container button:disabled {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+body section h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 0;
+}
+
+body section h2:nth-of-type(1) {
+  margin: 5px 0;
+}
+
+body section h2:nth-of-type(2) {
+  margin: 10px 0;
+}
+
+body section table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+}
+
+body section table td {
+  border-bottom: 1px solid #949494;
+  padding: 20px 0;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body .show-history-of-transactions {
+  height: 35px;
+  font-size: 15px;
+  background-color: #353942;
+  color: #fff;
+  padding: 0 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+/*# sourceMappingURL=style.css.map */
