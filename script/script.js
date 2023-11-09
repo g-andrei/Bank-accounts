@@ -106,8 +106,8 @@ function createBankAccount(accountName, initialAmount, currency) {
 }
 
 
-let numeCont = 'Cont principal';
-const bankAccount1 = createBankAccount(numeCont, 10843, 'USD');
+let accountName = 'Cont principal';
+const bankAccount1 = createBankAccount(accountName, 10843, 'USD');
 
 
 depositButton.addEventListener('click', function(e) {
