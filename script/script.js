@@ -52,7 +52,7 @@ function createBankAccount(accountName, initialAmount, currency) {
         const valueOfInput = document.querySelector('.input-value');
 
         if (amount < parseInt(valueOfInput.value)) {
-            console.log("Suma este prea mare");
+            console.log("The amount is too high");
             return;
         }
 
@@ -92,7 +92,9 @@ function createBankAccount(accountName, initialAmount, currency) {
     function showTransactions() {
         console.log(`------- Transaction list for ${name} --------`);
         for (let transaction of transactions) {
-            console.log(transaction);
+            console.log(
+                `Value: ${transaction.value}, Transaction Type: ${transaction.transactionType}, Date: ${transaction.date}`
+              );
         }
         console.log(`---------------`);
     }
@@ -106,7 +108,7 @@ function createBankAccount(accountName, initialAmount, currency) {
 }
 
 
-let accountName = 'Cont principal';
+let accountName = 'Main account';
 const bankAccount1 = createBankAccount(accountName, 10843, 'USD');
 
 
