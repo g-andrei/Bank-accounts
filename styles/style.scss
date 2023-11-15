@@ -1,91 +1,90 @@
-@import 'variables';
-@import 'reset';
+@import "variables";
+@import "reset";
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    h1 {
-        display: inline-block;
-        font-family:Arial, Helvetica, sans-serif;
-        font-weight: lighter;
-        width: 550px;
-        margin: 25px 0 15px 0;
-    }
+  h1 {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    width: 550px;
+    margin: 25px 0 15px 0;
+  }
 
-    section {
+  section {
+    border: $border-settings;
+    border-radius: 5px;
+    width: 550px;
+    padding: 25px 20px;
+
+    .transaction-input-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      input {
+        height: 35px;
         border: $border-settings;
         border-radius: 5px;
-        width: 550px;
-        padding: 25px 20px;
+        padding: 5px 10px;
+        font-size: 20px;
+      }
 
-        .transaction-input-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            input {
-                height: 35px;
-                border: $border-settings;
-                border-radius: 5px;
-                padding: 5px 10px;
-                font-size: 20px;
-            }
-
-            button {
-                height: 35px;
-                font-size: 15px;
-                background-color: $input-button-color;
-                color: #fff;
-                border-radius: 5px;
-                padding: 0 10px;
-                margin-left: 5px;
-            }
-
-            button:disabled {
-                border: 1px solid #999999;
-                background-color: #cccccc;
-                color: #666666;
-            }
-        }
-
-        h2 {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 25px;
-            font-weight: 0;
-        }
-
-        h2:nth-of-type(1) {
-            margin: 5px 0;
-        }
-
-        h2:nth-of-type(2) {
-            margin: 10px 0;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            text-align: left;
-
-            td {
-                border-bottom: $border-settings;
-                padding: 20px 0;
-                font-size: 18px;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-        }
-    }
-
-    .show-history-of-transactions {
+      button {
         height: 35px;
         font-size: 15px;
         background-color: $input-button-color;
         color: #fff;
-        padding: 0 10px;
         border-radius: 5px;
-        margin-top: 15px;
-    }
-}
+        padding: 0 10px;
+        margin-left: 5px;
+      }
 
+      button:disabled {
+        border: 1px solid #999999;
+        background-color: #cccccc;
+        color: #666666;
+      }
+    }
+
+    h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 25px;
+      font-weight: 0;
+    }
+
+    h2:nth-of-type(1) {
+      margin: 5px 0;
+    }
+
+    h2:nth-of-type(2) {
+      margin: 10px 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      text-align: left;
+
+      td {
+        border-bottom: $border-settings;
+        padding: 20px 0;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+  }
+
+  .show-history-of-transactions {
+    height: 35px;
+    font-size: 15px;
+    background-color: $input-button-color;
+    color: #fff;
+    padding: 0 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+}
